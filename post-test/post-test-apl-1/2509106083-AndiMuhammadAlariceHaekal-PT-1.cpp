@@ -51,6 +51,7 @@ int main(){
 
     while(menu == true){
         string opsi;
+        double nilai;
         cout << "======================================" << endl;
         cout << "===         Menu Konversi          ===" << endl; 
         cout << "======================================" << endl;
@@ -62,8 +63,47 @@ int main(){
         cout << "|3. Centimeter -> Meter dan Kilometer|" << endl;
         cout << "|4. Keluar                           |" << endl;
         cout << "--------------------------------------" << endl;
+        cout << "Pilih opsi\t\t: ";
         cin >> opsi;
-        menu = false;
+
+        if(opsi == "1"){
+            cout << "--------------------------------------" << endl;
+            cout << "-----------|Konversi Meter|-----------" << endl;
+            cout << "--------------------------------------" << endl;
+            cout << "Masukkan nilai Meter\t: ";cin >> nilai;
+
+            cout << "Kilometer\t\t: " << nilai / 1000 << endl;
+            cout << "Centimeter\t\t: " << nilai * 100 << endl;
+
+        }
+        else if(opsi == "2"){
+            cout << "--------------------------------------" << endl;
+            cout << "---------|Konversi Kilometer|---------" << endl;
+            cout << "--------------------------------------" << endl;
+            cout << "Masukkan nilai Kilometer\t: ";cin >> nilai;
+
+            cout << "Meter\t\t: " << nilai * 1000 << endl;
+            cout << "Centimeter\t\t: " << nilai * 100000 << endl;
+        }
+
+        else if(opsi == "3"){
+            cout << "--------------------------------------" << endl;
+            cout << "--------|Konversi Centimeter|---------" << endl;
+            cout << "--------------------------------------" << endl;
+            cout << "Masukkan nilai Centimeter\t: ";cin >> nilai;
+
+            cout << "Meter\t\t: " << nilai / 100 << endl;
+            cout << "Kilometer\t\t: " << nilai / 100000 << endl;
+        }
+
+        else if(opsi == "4"){
+            menu = false;
+        }
+
+        else{
+
+        }
+
     }
     cout << "selesai";
     return 0;
