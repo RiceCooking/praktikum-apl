@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int logout = 0;
-    bool menu;
+    bool menu = false;
     string nama, password;
 
     while(logout != 3){
@@ -52,9 +52,9 @@ int main(){
     while(menu == true){
         string opsi;
         double nilai;
-        cout << "======================================" << endl;
+        cout << endl << "======================================" << endl;
         cout << "===         Menu Konversi          ===" << endl; 
-        cout << "======================================" << endl;
+        cout << "===                                ===" << endl;
         cout << "--------------------------------------" << endl;
         cout << "|             Jenis Opsi             |" << endl;
         cout << "|------------------------------------|" << endl;
@@ -74,6 +74,7 @@ int main(){
 
             cout << "Kilometer\t\t: " << nilai / 1000 << endl;
             cout << "Centimeter\t\t: " << nilai * 100 << endl;
+            cout << "--------------------------------------" << endl;
 
         }
         else if(opsi == "2"){
@@ -82,8 +83,9 @@ int main(){
             cout << "--------------------------------------" << endl;
             cout << "Masukkan nilai Kilometer\t: ";cin >> nilai;
 
-            cout << "Meter\t\t: " << nilai * 1000 << endl;
+            cout << "Meter\t\t\t: " << nilai * 1000 << endl;
             cout << "Centimeter\t\t: " << nilai * 100000 << endl;
+            cout << "--------------------------------------" << endl;
         }
 
         else if(opsi == "3"){
@@ -92,19 +94,21 @@ int main(){
             cout << "--------------------------------------" << endl;
             cout << "Masukkan nilai Centimeter\t: ";cin >> nilai;
 
-            cout << "Meter\t\t: " << nilai / 100 << endl;
+            cout << "Meter\t\t\t: " << nilai / 100 << endl;
             cout << "Kilometer\t\t: " << nilai / 100000 << endl;
+            cout << "--------------------------------------" << endl;
         }
 
         else if(opsi == "4"){
+            cout << "Keluar dari program, terima kasih telah menggunakan program" << endl;
             menu = false;
         }
 
         else{
-
+            cout << "Pilihlah berdasarkan opsi" << endl;
         }
 
     }
-    cout << "selesai";
+
     return 0;
 }
