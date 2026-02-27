@@ -81,10 +81,10 @@ int main(){
             cout << "--------------------------------------" << endl;
             cout << "---------|Konversi Kilometer|---------" << endl;
             cout << "--------------------------------------" << endl;
-            cout << "Masukkan nilai Kilometer\t: ";cin >> nilai;
+            cout << "Masukkan nilai Kilometer : ";cin >> nilai;
 
-            cout << "Meter\t\t\t: " << nilai * 1000 << endl;
-            cout << "Centimeter\t\t: " << nilai * 100000 << endl;
+            cout << "Meter\t\t\t : " << nilai * 1000 << endl;
+            cout << "Centimeter\t\t : " << nilai * 100000 << endl;
             cout << "--------------------------------------" << endl;
         }
 
