@@ -21,7 +21,7 @@ int main(){
         else{
             logout++;
             if(nama != "Andi" && password == "083"){
-                cout << "Info\t\t: Nama tidak valid" << endl;
+                cout << "Info\t\t: Username tidak valid" << endl;
             }
 
             else if(password != "083" && nama == "Andi"){
