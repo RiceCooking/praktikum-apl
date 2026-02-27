@@ -107,7 +107,6 @@ int main(){
         else{
             cout << "Pilihlah berdasarkan opsi" << endl;
         }
-//buat ss
     }
 
     return 0;
