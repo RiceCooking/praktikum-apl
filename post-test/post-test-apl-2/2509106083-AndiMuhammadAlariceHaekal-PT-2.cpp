@@ -26,6 +26,9 @@ User pengguna[50];
 int jumlahuser = 0;
 
 int main(){
+    pengguna[jumlahuser].username = "Andi";
+    pengguna[jumlahuser].password = "083";
+    jumlahuser++;
     while(true) {
         bool login = true;
         bool menu = false;
@@ -33,9 +36,10 @@ int main(){
         int bataslogin = 0; 
 
         while(login == true){
+            
             int opsi;
             string username, password;
-            cout << "=========================================" << endl;
+            cout << endl << endl << "=========================================" << endl;
             cout << "====          HALAMAN MASUK          ====" << endl;
             cout << "=========================================" << endl;
             cout << "1. Register" << endl;
@@ -53,6 +57,9 @@ int main(){
                     cout << "Info\t\t: Kapasitas user sudah penuh" << endl;
                 }
                 else {
+                    cout << "-----------------------------------------" << endl;
+                    cout << "=               REGISTER                =" << endl;
+                    cout << "-----------------------------------------" << endl;
                     cout << "Username\t: ";cin >> username;
                     bool tersedia = false; 
                     
@@ -74,6 +81,9 @@ int main(){
                 }
             }
             else if(opsi == 2){
+                cout << "-----------------------------------------" << endl;
+                cout << "=                LOGIN                  =" << endl;
+                cout << "-----------------------------------------" << endl;
                 while(true){
                     cout << "Username\t: ";cin >> username; 
                     cout << "Password\t: ";cin >> password;  
@@ -96,10 +106,10 @@ int main(){
                     else if(logvalid == false){
                         bataslogin++;
                         if(bataslogin < 3){
-                            cout << "Info\t\t: Username atau Password salah" << endl;
+                            cout << "Info\t\t: Username atau Password salah" << endl << endl;
                         }
                         else if(bataslogin == 3){
-                            cout << "Info\t\t: Gagal login 3 kali, keluar dari program" << endl;
+                            cout << "Info\t\t: Gagal login 3 kali, keluar dari program" << endl << endl;
                             return 0;
                         }
                     }
