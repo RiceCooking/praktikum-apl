@@ -136,7 +136,6 @@ int main(){
             cout << "5. Halaman Masuk" << endl;
             cout << "=========================================" << endl;
             cout << "Pilih opsi\t: "; cin >> opsi;
-            cout << "=========================================" << endl;
             
             if(cin.fail()){
                 cin.clear();
@@ -151,8 +150,9 @@ int main(){
                     cout << "Info\t: Kapasitas Playlist sudah penuh" << endl;
                 }
                 else{
-                    cout << "=======================================" << endl;
-                    cout << "====        BUAT PLAYLIST        ====" << endl;
+                    cout << "-----------------------------------------" << endl;
+                    cout << "=            BUAT PLAYLIST              =" << endl;
+                    cout << "-----------------------------------------" << endl;
                     cout << "Nama Playlist\t: "; 
                     cin.ignore();
                     getline(cin, pengguna[userindex].musiklist[playlist].judul);
@@ -233,8 +233,9 @@ int main(){
                     cout << "Info\t\t: Anda belum memiliki Playlist" << endl;
                 }
                 else{
-                    cout << "=========================================" << endl;
-                    cout << "===          DAFTAR PLAYLIST          ===" << endl;
+                    cout << "-----------------------------------------" << endl;
+                    cout << "=            DAFTAR PLAYLIST            =" << endl;
+                    cout << "-----------------------------------------" << endl;
                     for(int i = 0; i < playlist; i++){
                         cout << "=========================================" << endl;
                         cout << "Nama Playlist : " << pengguna[userindex].musiklist[i].judul << endl;
@@ -257,8 +258,9 @@ int main(){
                     cout << "Info\t\t: Anda belum memiliki Playlist" << endl;
                 }
                 else{
-                    cout << "=======================================" << endl;
-                    cout << "===          UBAH PLAYLIST          ===" << endl;
+                    cout << "-----------------------------------------" << endl;
+                    cout << "=            UBAH PLAYLIST              =" << endl;
+                    cout << "-----------------------------------------" << endl;
                     cout << "Daftar Playlist: " << endl;
 
                     for(int i = 0; i < totalPlaylist; i++){
@@ -285,7 +287,7 @@ int main(){
                     }while (validPlaylist == false);
                     int indexP = pilihPlaylist - 1;
                     
-                    cout << "=== Opsi Ubah ==="  << endl;
+                    cout << "---|            Opsi Ubah            |---"  << endl;
                     cout << "1. Nama Playlist" << endl;
                     cout << "2. Data Lagu" << endl;
                     
@@ -400,8 +402,9 @@ int main(){
                     cout << "Info\t\t: Anda belum memiliki Playlist" << endl;
                 } 
                 else{
-                    cout << "=======================================" << endl;
-                    cout << "===          HAPUS PLAYLIST         ===" << endl;
+                    cout << "-----------------------------------------" << endl;
+                    cout << "=             HAPUS PLAYLIST            =" << endl;
+                    cout << "-----------------------------------------" << endl;
                     cout << "Daftar Playlist:" << endl;
 
                     for(int i = 0; i < totalPlaylist; i++){
@@ -428,7 +431,7 @@ int main(){
                     }while (validPlaylist == false);
                     
                     int indexP = pilihPlaylist - 1;
-                    cout << "=== Opsi Hapus ===" << endl;
+                    cout << "---|            Opsi Hapus           |---"  << endl;
                     cout << "1. Hapus Playlist" << endl;
                     cout << "2. Hapus Lagu dalam Playlist" << endl;
                     
@@ -499,7 +502,7 @@ int main(){
                 }
             }
             else if(opsi == 5){
-                cout << "Kembali kehalaman masuk" << endl;
+                cout << "Info\t\t: Kembali kehalaman masuk" << endl;
                 menu = false; 
             } 
             else{
