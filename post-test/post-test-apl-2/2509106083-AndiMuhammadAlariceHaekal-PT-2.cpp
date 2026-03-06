@@ -140,14 +140,14 @@ int main(){
             if(cin.fail()){
                 cin.clear();
                 cin.ignore(1000, '\n');
-                cout << "Info\t: Input harus angka" << endl;
+                cout << "Info\t\t: Input harus angka" << endl;
                 continue;
             }
 
             if(opsi == 1){
                 int playlist = pengguna[userindex].jumlahPlaylist; 
                 if(playlist >= 50){
-                    cout << "Info\t: Kapasitas Playlist sudah penuh" << endl;
+                    cout << "Info\t\t: Kapasitas Playlist sudah penuh" << endl;
                 }
                 else{
                     cout << "-----------------------------------------" << endl;
