@@ -195,7 +195,7 @@ int main(){
                                 genrevalid = true; 
                             }
                             else{
-                                cout << "Info\t: Genre tidak valid" << endl;
+                                cout << "Info\t\t: Genre tidak valid" << endl;
                             }
                         }while (genrevalid == false);
                         pengguna[userindex].musiklist[playlist].lagu[i].genre = Genre;
